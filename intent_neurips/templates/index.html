@@ -1,0 +1,197 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Ruleset Intent Annotation</title>
+<script src="https://cdn.jsdelivr.net/npm/diff@5.2.0/dist/diff.min.js"></script>
+<style>
+  body { font-family: -apple-system, system-ui, sans-serif; max-width: 1200px; margin: 20px auto; padding: 0 20px; color: #222; }
+  h1 { font-size: 1.4em; }
+  .desc { background: #f4f6fa; border-left: 4px solid #4a6fa5; padding: 12px 16px; margin-bottom: 20px; font-size: 0.95em; }
+  .meta { color: #666; font-size: 0.9em; margin-bottom: 10px; }
+  .pair-title { font-weight: 600; margin: 10px 0; }
+  table.rules { width: 100%; border-collapse: collapse; table-layout: fixed; }
+  table.rules th { background: #eef; padding: 6px; text-align: left; width: 50%; }
+  table.rules td { vertical-align: top; padding: 8px; border-top: 1px solid #ddd; font-size: 0.9em; }
+  .rule-id { font-weight: 600; color: #4a6fa5; display: block; margin-bottom: 3px; }
+  .added { background: #d4f8d4; }
+  .removed { background: #f8d4d4; text-decoration: line-through; }
+  .empty { color: #aaa; font-style: italic; }
+  .diff ins { background: #c6f7c6; text-decoration: none; }
+  .diff del { background: #f7c6c6; text-decoration: line-through; }
+  .controls { position: sticky; bottom: 0; background: #fff; border-top: 2px solid #4a6fa5; padding: 16px 0; margin-top: 20px; }
+  .scale { display: flex; align-items: center; gap: 16px; }
+  .scale input[type=range] { flex: 1; }
+  .scale-labels { display: flex; justify-content: space-between; font-size: 0.85em; color: #555; margin-top: 4px; }
+  button { background: #4a6fa5; color: #fff; border: none; padding: 10px 20px; font-size: 1em; border-radius: 4px; cursor: pointer; }
+  button:disabled { background: #aaa; }
+  #annotator { padding: 6px; font-size: 1em; }
+  #status { margin-left: 12px; color: #4a6fa5; font-size: 0.9em; }
+  .score-display { font-weight: 600; min-width: 60px; text-align: center; }
+</style>
+</head>
+<body>
+
+<h1>Ruleset Intent-Preservation Annotation</h1>
+<div class="desc">{{ description }}</div>
+
+<div>
+  <label>Annotator name: <input id="annotator" placeholder="your name"></label>
+  <button id="start">Start</button>
+</div>
+
+<div id="task" style="display:none;">
+  <div class="meta"><span id="progress"></span> &middot; <span id="pair-name"></span></div>
+  <div class="pair-title">Does the revised ruleset preserve the intent of the original?</div>
+  <table class="rules">
+    <thead><tr><th>Original</th><th>Revised</th></tr></thead>
+    <tbody id="rules-body"></tbody>
+  </table>
+
+  <div class="controls">
+    <div class="scale">
+      <span>No (-1)</span>
+      <input type="range" id="score" min="-1" max="1" step="0.01" value="0" list="score-ticks">
+      <datalist id="score-ticks">
+        <option value="-1" label="no"></option>
+        <option value="0" label="unsure"></option>
+        <option value="1" label="yes"></option>
+      </datalist>
+      <span>Yes (+1)</span>
+      <span class="score-display" id="score-display">0.00 (unsure)</span>
+    </div>
+    <div style="margin-top: 12px;">
+      <button id="submit">Submit & Next</button>
+      <span id="status"></span>
+    </div>
+  </div>
+</div>
+
+<div id="done" style="display:none;">
+  <h2>All done — thank you!</h2>
+  <p>Annotations were saved to the <code>annotations/</code> directory after every submission.</p>
+</div>
+
+<script>
+const TOTAL = {{ n_pairs }};
+let idx = 0;
+let annotator = "";
+
+const scoreEl = document.getElementById("score");
+const scoreDisplay = document.getElementById("score-display");
+function labelFor(v) {
+  if (v <= -0.66) return "no";
+  if (v >= 0.66) return "yes";
+  if (v <= -0.2) return "leaning no";
+  if (v >= 0.2) return "leaning yes";
+  return "unsure";
+}
+function currentScore() { return parseFloat(scoreEl.value); }
+function refreshScore() {
+  const v = currentScore();
+  scoreDisplay.textContent = `${v.toFixed(2)} (${labelFor(v)})`;
+}
+scoreEl.addEventListener("input", refreshScore);
+
+document.getElementById("start").onclick = () => {
+  const name = document.getElementById("annotator").value.trim();
+  if (!name) { alert("Please enter your name."); return; }
+  annotator = name;
+  document.getElementById("task").style.display = "block";
+  loadPair();
+};
+
+async function loadPair() {
+  if (idx >= TOTAL) {
+    document.getElementById("task").style.display = "none";
+    document.getElementById("done").style.display = "block";
+    return;
+  }
+  const r = await fetch(`/api/pair/${idx}`);
+  const data = await r.json();
+  document.getElementById("progress").textContent = `Pair ${idx + 1} of ${TOTAL}`;
+  document.getElementById("pair-name").textContent = `${data.original_name} → ${data.revised_name}`;
+  renderRules(data.original_rules, data.revised_rules);
+  scoreEl.value = 0;
+  refreshScore();
+  document.getElementById("status").textContent = "";
+  window.scrollTo(0, 0);
+  window._currentPair = data;
+}
+
+function renderRules(orig, rev) {
+  // Order rows by the revised ruleset's order; append any rules removed in the
+  // revision (present in original but not in revised) at the bottom.
+  const origById = new Map(orig.map(r => [r.id, r]));
+  const tbody = document.getElementById("rules-body");
+  tbody.innerHTML = "";
+
+  for (const r of rev) {
+    const o = origById.get(r.id);
+    tbody.appendChild(row(o, r));
+    origById.delete(r.id);
+  }
+  for (const [, o] of origById) {
+    tbody.appendChild(row(o, null));
+  }
+}
+
+function row(o, r) {
+  const tr = document.createElement("tr");
+  const left = document.createElement("td");
+  const right = document.createElement("td");
+
+  if (o) {
+    left.innerHTML = `<span class="rule-id">${escape(o.id)}</span>${escape(o.rule)}`;
+  } else {
+    left.innerHTML = `<span class="empty">(no matching rule in original)</span>`;
+    right.classList.add("added");
+  }
+  if (r) {
+    right.innerHTML = `<span class="rule-id">${escape(r.id)}</span>${o ? diffText(o.rule, r.rule) : escape(r.rule)}`;
+  } else {
+    right.innerHTML = `<span class="empty">(removed in revision)</span>`;
+    left.classList.add("removed");
+  }
+  tr.appendChild(left);
+  tr.appendChild(right);
+  return tr;
+}
+
+function escape(s) {
+  return s.replace(/[&<>]/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;"}[c]));
+}
+
+function diffText(a, b) {
+  const parts = Diff.diffWordsWithSpace(a, b);
+  return '<span class="diff">' + parts.map(p => {
+    const t = escape(p.value);
+    if (p.added) return `<ins>${t}</ins>`;
+    if (p.removed) return `<del>${t}</del>`;
+    return t;
+  }).join("") + '</span>';
+}
+
+document.getElementById("submit").onclick = async () => {
+  const score = currentScore();
+  const pair = window._currentPair;
+  const r = await fetch("/api/annotate", {
+    method: "POST",
+    headers: {"Content-Type": "application/json"},
+    body: JSON.stringify({
+      annotator,
+      original_name: pair.original_name,
+      revised_name: pair.revised_name,
+      score,
+      label: labelFor(score),
+    }),
+  });
+  const j = await r.json();
+  document.getElementById("status").textContent = `Saved to ${j.saved_to}`;
+  idx += 1;
+  setTimeout(loadPair, 200);
+};
+</script>
+
+</body>
+</html>
