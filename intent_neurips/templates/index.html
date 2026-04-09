@@ -24,7 +24,8 @@
   .scale input[type=range] { flex: 1; }
   .scale-labels { display: flex; justify-content: space-between; font-size: 0.85em; color: #555; margin-top: 4px; }
   button { background: #4a6fa5; color: #fff; border: none; padding: 10px 20px; font-size: 1em; border-radius: 4px; cursor: pointer; }
-  button:disabled { background: #aaa; }
+  button:disabled { background: #aaa; cursor: not-allowed; opacity: 0.5; }
+  button + button { margin-left: 8px; }
   #annotator { padding: 6px; font-size: 1em; }
   #status { margin-left: 12px; color: #4a6fa5; font-size: 0.9em; }
   .score-display { font-weight: 600; min-width: 60px; text-align: center; }
@@ -72,7 +73,9 @@
       <textarea id="feedback" rows="3" style="width:100%; box-sizing:border-box; font-family:inherit; font-size:0.9em; padding:6px;" placeholder="Any notes about this pair..."></textarea>
     </div>
     <div style="margin-top: 12px;">
+      <button id="back" disabled>&larr; Back</button>
       <button id="submit">Submit & Next</button>
+      <button id="skip">Skip &rarr;</button>
       <span id="status"></span>
     </div>
   </div>
@@ -85,8 +88,10 @@
 
 <script>
 const TOTAL = {{ n_pairs }};
+const PAIR_KEYS = {{ pair_keys | tojson }};
 let idx = 0;
 let annotator = "";
+let localAnnotations = {};
 
 const scoreEl = document.getElementById("score");
 const scoreDisplay = document.getElementById("score-display");
@@ -110,10 +115,27 @@ document.getElementById("diff-toggle").addEventListener("change", () => {
   }
 });
 
-document.getElementById("start").onclick = () => {
+document.getElementById("start").onclick = async () => {
   const name = document.getElementById("annotator").value.trim();
   if (!name) { alert("Please enter your name."); return; }
   annotator = name;
+
+  // Fetch existing annotations for resume
+  const r = await fetch(`/api/annotations/${encodeURIComponent(annotator)}`);
+  const data = await r.json();
+  localAnnotations = data.annotations || {};
+
+  // Find first unannotated pair
+  idx = TOTAL;
+  for (let i = 0; i < TOTAL; i++) {
+    const pk = PAIR_KEYS[i];
+    const key = `${pk.original_name}:${pk.revised_name}`;
+    if (!(key in localAnnotations)) {
+      idx = i;
+      break;
+    }
+  }
+
   document.getElementById("task").style.display = "block";
   loadPair();
 };
@@ -135,9 +157,19 @@ async function loadPair() {
   headingEl.textContent = `Current Task: ${data.original_name}`;
   headingEl.style.display = "block";
   renderRules(data.original_rules, data.revised_rules);
-  scoreEl.value = 0;
+
+  // Pre-fill from local annotations if previously annotated
+  const pairKey = `${data.original_name}:${data.revised_name}`;
+  const existing = localAnnotations[pairKey];
+  if (existing) {
+    scoreEl.value = existing.score;
+    document.getElementById("feedback").value = existing.feedback || "";
+  } else {
+    scoreEl.value = 0;
+    document.getElementById("feedback").value = "";
+  }
   refreshScore();
-  document.getElementById("feedback").value = "";
+  document.getElementById("back").disabled = (idx === 0);
   document.getElementById("status").textContent = "";
   window.scrollTo(0, 0);
   window._currentPair = data;
@@ -213,9 +245,27 @@ document.getElementById("submit").onclick = async () => {
     }),
   });
   const j = await r.json();
+  // Update local map so Back navigation shows latest values
+  const pairKey = `${pair.original_name}:${pair.revised_name}`;
+  localAnnotations[pairKey] = {
+    score: score,
+    label: labelFor(score),
+    feedback: document.getElementById("feedback").value,
+  };
   document.getElementById("status").textContent = `Saved to ${j.saved_to}`;
   idx += 1;
   setTimeout(loadPair, 200);
+};
+
+document.getElementById("back").onclick = () => {
+  if (idx <= 0) return;
+  idx -= 1;
+  loadPair();
+};
+
+document.getElementById("skip").onclick = () => {
+  idx += 1;
+  loadPair();
 };
 </script>
 

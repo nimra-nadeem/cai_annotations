@@ -59,10 +59,15 @@ PAIRS = discover_pairs()
 
 @app.route("/")
 def index():
+    pair_keys = [
+        {"original_name": p["original_name"], "revised_name": p["revised_name"]}
+        for p in PAIRS
+    ]
     return render_template(
         "index.html",
         description=DEFAULT_RULESET_DESCRIPTION,
         n_pairs=len(PAIRS),
+        pair_keys=pair_keys,
     )
 
 
@@ -91,6 +96,24 @@ def annotate():
     with open(out, "a") as f:
         f.write(json.dumps(record) + "\n")
     return jsonify({"ok": True, "saved_to": str(out.relative_to(ROOT))})
+
+
+@app.route("/api/annotations/<annotator>")
+def get_annotations(annotator):
+    safe = "".join(c for c in annotator if c.isalnum() or c in "-_")
+    path = ANNOTATIONS_DIR / f"annotations_{safe}.jsonl"
+    if not path.exists():
+        return jsonify({"annotations": {}})
+    records = load_jsonl(path)
+    latest = {}
+    for r in records:
+        key = f"{r['original_name']}:{r['revised_name']}"
+        latest[key] = {
+            "score": r["score"],
+            "label": r["label"],
+            "feedback": r.get("feedback", ""),
+        }
+    return jsonify({"annotations": latest})
 
 
 if __name__ == "__main__":
