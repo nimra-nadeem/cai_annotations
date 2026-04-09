@@ -1,0 +1,1 @@
+The FineWeb rubric is used to score and filter web text based on its educational quality when constructing training datasets. The rubric is primarily used by LLM judges to score and filter content.

@@ -1,0 +1,1 @@
+This is a model spec ruleset used for AI alignment, particularly for RLAIF, where judge models use the ruleset to identify problematic AI behavior. We are evaluating whether automatically revised versions of the ruleset preserve the intent of the original ruleset."

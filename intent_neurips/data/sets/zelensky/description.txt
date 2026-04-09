@@ -1,0 +1,2 @@
+This ruleset is the polymarket resolution criteria for the following question: Will Zelenskyy wear a suit before July?
+Polymarket is a prediction market platform where users bet on "Yes" or "No" outcomes of real-world events. The resolution criteria for each market specifies exactly how each market will be decided, i.e., what counts as the outcome and what sources or conditions determine it. 
