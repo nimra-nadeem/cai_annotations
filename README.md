@@ -42,12 +42,9 @@ Then open <http://127.0.0.1:5000> in your browser.
 
 Your annotations are appended to
 `annotations/annotations_<your-name>.jsonl` after every submission. If you
-stop and restart the app, it will start over from the first pair — there's
-currently no resume support, so it's best to do all your annotations in one
-sitting. 
-(If you do need to restart partway, re-annotating a pair under the
-same name will append a new line rather than overwrite the old one, so you
-can de-duplicate later by keeping the latest entry per pair.)
+stop and restart the app, just enter the same name and click **Start** —
+it will automatically resume from the first unannotated pair. You can also
+use the **Back** and **Skip** buttons to navigate between pairs.
 
 ## Uploading your results
 
