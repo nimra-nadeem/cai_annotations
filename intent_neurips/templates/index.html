@@ -33,12 +33,12 @@
 <body>
 
 <h1>Ruleset Intent-Preservation Annotation</h1>
-<div class="desc">{{ description }}</div>
-
 <div>
   <label>Annotator name: <input id="annotator" placeholder="your name"></label>
   <button id="start">Start</button>
 </div>
+
+<div class="desc" id="desc" style="display:none; margin-top:20px;">{{ description }}</div>
 
 <div id="task" style="display:none;">
   <div class="meta"><span id="progress"></span> &middot; <span id="pair-name"></span></div>
@@ -59,6 +59,10 @@
       </datalist>
       <span>Yes (+1)</span>
       <span class="score-display" id="score-display">0.00 (unsure)</span>
+    </div>
+    <div style="margin-top: 12px;">
+      <label for="feedback" style="display:block; font-size:0.9em; color:#555; margin-bottom:4px;">Feedback (optional):</label>
+      <textarea id="feedback" rows="3" style="width:100%; box-sizing:border-box; font-family:inherit; font-size:0.9em; padding:6px;" placeholder="Any notes about this pair..."></textarea>
     </div>
     <div style="margin-top: 12px;">
       <button id="submit">Submit & Next</button>
@@ -111,9 +115,13 @@ async function loadPair() {
   const data = await r.json();
   document.getElementById("progress").textContent = `Pair ${idx + 1} of ${TOTAL}`;
   document.getElementById("pair-name").textContent = `${data.original_name} → ${data.revised_name}`;
+  const descEl = document.getElementById("desc");
+  if (data.description) descEl.textContent = data.description;
+  descEl.style.display = "block";
   renderRules(data.original_rules, data.revised_rules);
   scoreEl.value = 0;
   refreshScore();
+  document.getElementById("feedback").value = "";
   document.getElementById("status").textContent = "";
   window.scrollTo(0, 0);
   window._currentPair = data;
@@ -184,6 +192,7 @@ document.getElementById("submit").onclick = async () => {
       revised_name: pair.revised_name,
       score,
       label: labelFor(score),
+      feedback: document.getElementById("feedback").value,
     }),
   });
   const j = await r.json();

@@ -10,7 +10,7 @@ DATA = ROOT / "data"
 ANNOTATIONS_DIR = ROOT / "annotations"
 ANNOTATIONS_DIR.mkdir(exist_ok=True)
 
-RULESET_DESCRIPTION = (
+DEFAULT_RULESET_DESCRIPTION = (
     "This is a model spec ruleset used for AI alignment, particularly for "
     "RLAIF, where judge models use the ruleset to identify problematic AI "
     "behavior. We are evaluating whether automatically revised versions of "
@@ -42,12 +42,19 @@ def discover_pairs():
         if not orig_path.exists() or not rev_dir.is_dir():
             continue
         orig_rules = load_jsonl(orig_path)
+        desc_path = set_dir / "description.txt"
+        description = (
+            desc_path.read_text().strip()
+            if desc_path.exists()
+            else DEFAULT_RULESET_DESCRIPTION
+        )
         for rev_path in sorted(rev_dir.glob("*.jsonl")):
             pairs.append({
                 "original_name": set_dir.name,
                 "revised_name": rev_path.stem,
                 "original_rules": orig_rules,
                 "revised_rules": load_jsonl(rev_path),
+                "description": description,
             })
     return pairs
 
@@ -59,7 +66,7 @@ PAIRS = discover_pairs()
 def index():
     return render_template(
         "index.html",
-        description=RULESET_DESCRIPTION,
+        description=DEFAULT_RULESET_DESCRIPTION,
         n_pairs=len(PAIRS),
     )
 
@@ -83,6 +90,7 @@ def annotate():
         "revised_name": payload["revised_name"],
         "score": payload["score"],  # -1, 0, or 1
         "label": payload["label"],  # "yes" / "unsure" / "no"
+        "feedback": payload.get("feedback", ""),
         "timestamp": time.time(),
     }
     with open(out, "a") as f:
