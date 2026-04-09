@@ -42,12 +42,7 @@ def discover_pairs():
         if not orig_path.exists() or not rev_dir.is_dir():
             continue
         orig_rules = load_jsonl(orig_path)
-        desc_path = set_dir / "description.txt"
-        description = (
-            desc_path.read_text().strip()
-            if desc_path.exists()
-            else DEFAULT_RULESET_DESCRIPTION
-        )
+        description = (set_dir / "description.txt").read_text().strip()
         for rev_path in sorted(rev_dir.glob("*.jsonl")):
             pairs.append({
                 "original_name": set_dir.name,

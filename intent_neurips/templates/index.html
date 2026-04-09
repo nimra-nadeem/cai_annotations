@@ -38,11 +38,15 @@
   <button id="start">Start</button>
 </div>
 
-<div class="desc" id="desc" style="display:none; margin-top:20px;">{{ description }}</div>
+<div class="meta" id="progress-top" style="display:none; text-align:center; margin-top:20px;"><span id="progress"></span></div>
+<h2 id="task-heading" style="display:none; margin-top:10px; margin-bottom:6px; font-size:1.1em;"></h2>
+<div class="desc" id="desc" style="display:none;">{{ description }}</div>
 
 <div id="task" style="display:none;">
-  <div class="meta"><span id="progress"></span> &middot; <span id="pair-name"></span></div>
-  <div class="pair-title">Does the revised ruleset preserve the intent of the original?</div>
+  <div class="pair-title" style="text-align:center;">Does the revised ruleset preserve the intent of the original?</div>
+  <div style="margin-bottom:8px; font-size:0.9em;">
+    <label><input type="checkbox" id="diff-toggle" checked> Show inline diff highlighting</label>
+  </div>
   <table class="rules">
     <thead><tr><th>Original</th><th>Revised</th></tr></thead>
     <tbody id="rules-body"></tbody>
@@ -51,12 +55,15 @@
   <div class="controls">
     <div class="scale">
       <span>No (-1)</span>
-      <input type="range" id="score" min="-1" max="1" step="0.01" value="0" list="score-ticks">
-      <datalist id="score-ticks">
-        <option value="-1" label="no"></option>
-        <option value="0" label="unsure"></option>
-        <option value="1" label="yes"></option>
-      </datalist>
+      <div style="flex:1; display:flex; flex-direction:column; align-items:stretch;">
+        <input type="range" id="score" min="-1" max="1" step="0.01" value="0" list="score-ticks">
+        <datalist id="score-ticks">
+          <option value="-1" label="no"></option>
+          <option value="0" label="unsure"></option>
+          <option value="1" label="yes"></option>
+        </datalist>
+        <div style="text-align:center; font-size:0.85em; color:#555; margin-top:2px;">Unsure (0)</div>
+      </div>
       <span>Yes (+1)</span>
       <span class="score-display" id="score-display">0.00 (unsure)</span>
     </div>
@@ -97,6 +104,12 @@ function refreshScore() {
 }
 scoreEl.addEventListener("input", refreshScore);
 
+document.getElementById("diff-toggle").addEventListener("change", () => {
+  if (window._currentPair) {
+    renderRules(window._currentPair.original_rules, window._currentPair.revised_rules);
+  }
+});
+
 document.getElementById("start").onclick = () => {
   const name = document.getElementById("annotator").value.trim();
   if (!name) { alert("Please enter your name."); return; }
@@ -114,10 +127,13 @@ async function loadPair() {
   const r = await fetch(`/api/pair/${idx}`);
   const data = await r.json();
   document.getElementById("progress").textContent = `Pair ${idx + 1} of ${TOTAL}`;
-  document.getElementById("pair-name").textContent = `${data.original_name} → ${data.revised_name}`;
+  document.getElementById("progress-top").style.display = "block";
   const descEl = document.getElementById("desc");
   if (data.description) descEl.textContent = data.description;
   descEl.style.display = "block";
+  const headingEl = document.getElementById("task-heading");
+  headingEl.textContent = `Current Task: ${data.original_name}`;
+  headingEl.style.display = "block";
   renderRules(data.original_rules, data.revised_rules);
   scoreEl.value = 0;
   refreshScore();
@@ -156,7 +172,8 @@ function row(o, r) {
     right.classList.add("added");
   }
   if (r) {
-    right.innerHTML = `<span class="rule-id">${escape(r.id)}</span>${o ? diffText(o.rule, r.rule) : escape(r.rule)}`;
+    const showDiff = document.getElementById("diff-toggle").checked;
+    right.innerHTML = `<span class="rule-id">${escape(r.id)}</span>${o && showDiff ? diffText(o.rule, r.rule) : escape(r.rule)}`;
   } else {
     right.innerHTML = `<span class="empty">(removed in revision)</span>`;
     left.classList.add("removed");

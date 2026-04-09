@@ -207,6 +207,8 @@ marimo/_static/
 marimo/_lsp/
 __marimo__/
 
+.DS_Store
+
 # intent_neurips
 intent_neurips/annotations/
 intent_neurips/scripts/
