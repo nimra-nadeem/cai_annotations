@@ -14,6 +14,8 @@ revision preserves the intent of the original ruleset.
    ```bash
    pip install flask
    ```
+   **If you have uv on your computer, just run `uv sync`**
+
 
 ## Running the app
 
