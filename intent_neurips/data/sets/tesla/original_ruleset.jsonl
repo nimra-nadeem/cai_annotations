@@ -1,0 +1,6 @@
+{"id": "Rule 1", "rule": "This market will resolve to 'Yes' if Tesla publicly launches a fully driverless taxi service by June 30, 11:59 PM ET. Otherwise, this market will resolve to 'No'"}
+{"id": "Rule 2", "rule": "Any service that allows a member of the general public to summon and ride in a Tesla vehicle operating without any human—onboard or remote—actively controlling the vehicle will count."}
+{"id": "Rule 3", "rule": "A human may be present in the vehicle or monitoring remotely for emergency intervention, but they must not be physically positioned to take control (for example, no safety driver in the driver’s seat) and must not actively steer, brake, accelerate, or otherwise drive the car under normal operation."}
+{"id": "Rule 4", "rule": "A program that is restricted to Tesla employees, invite-only testers, closed-beta participants, factory self-delivery features, or the mere release of Full Self-Driving software for private owner-drivers will not qualify."}
+{"id": "Rule 5", "rule": "Regulatory permits or approvals, press demonstrations, and prototype unveilings without live public ridership likewise will not count toward resolution."}
+{"id": "Rule 6", "rule": "This market’s resolution source will be a consensus of credible reporting."}
