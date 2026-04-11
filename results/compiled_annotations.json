@@ -1,0 +1,1111 @@
+{
+    "anthropic_seed1_ep1_optimal": {
+        "Kylie": {
+            "label": "leaning yes",
+            "score": 0.51,
+            "feedback": "Some of the prioritizations are overly specific."
+        },
+        "Lucy": {
+            "label": "leaning yes",
+            "score": 0.54,
+            "feedback": ""
+        },
+        "Inyoung": {
+            "label": "no",
+            "score": -0.79,
+            "feedback": "I am unsure about whether meta-rule is consistent with original intent of the writers, so I was unsure. But specific rules seem to add new meanings into the original rule. For example, \"ensuring individuals remain free from asset seizure\" goes beyond or is more specific than general protection of property rights. Protection of property rights could mean that AI models shouldn't assist with users' attempts to break into another person's property. But \"asset seizure\" reminds me of the government's search and seizure of private property. How could AI models protect unlawful seizure of the government? For Rule 3, I am not really sure why procedural fairness matters more than substantive fairness. "
+        },
+        "Michel": {
+            "label": "yes",
+            "score": 0.84,
+            "feedback": ""
+        },
+        "Lexin": {
+            "label": "leaning yes",
+            "score": 0.65,
+            "feedback": "Leaning yes only, as I'm unsure whether the original authors intended to create the hierarchy of priorities of rules specified by the meta-rule 1. I think they probably didn't wanna explicitly touch upon such an order of priorities from the first place."
+        },
+        "Maggie Wang": {
+            "label": "leaning no",
+            "score": -0.52,
+            "feedback": "- \"rejecting biases\" is very broad, and makes Rule 4 more ambiguous in my opinion. What is \"procedural fairness\"?\n- Rule 5 is technically more explicit, and even helpful, but it feels somewhat arbitrary to call out this one specific addition of \"controversial ideas\" relative to others.\n- I agree with the addition of Rule 21\n- Rule 46: what are \"established ethical norms\"\n- Rule 54 is inherently ambiguous, not even sure what intent they had in the first place"
+        },
+        "dominik": {
+            "label": "leaning yes",
+            "score": 0.5,
+            "feedback": ""
+        },
+        "zeyu": {
+            "label": "leaning no",
+            "score": -0.49,
+            "feedback": ""
+        },
+        "Boyi": {
+            "label": "yes",
+            "score": 0.9,
+            "feedback": ""
+        },
+        "Kincaid": {
+            "label": "leaning no",
+            "score": -0.53,
+            "feedback": ""
+        }
+    },
+    "anthropic_seed1_ep1_set1": {
+        "Kylie": {
+            "label": "no",
+            "score": -1.0,
+            "feedback": ""
+        },
+        "Lucy": {
+            "label": "unsure",
+            "score": 0.0,
+            "feedback": "Not sure if rule2 was designed to be the highest priority."
+        },
+        "Inyoung": {
+            "label": "unsure",
+            "score": 0.0,
+            "feedback": ""
+        },
+        "Michel": {
+            "label": "unsure",
+            "score": 0.15,
+            "feedback": "This hierarchy is very elaborate, I think most of the meta-rules make sense except for meta-rule 4 (I wouldn't order it the same way)"
+        },
+        "Lexin": {
+            "label": "no",
+            "score": -1.0,
+            "feedback": "I don't think these ultra specific meta-rules were in the original designers' mind."
+        },
+        "Maggie Wang": {
+            "label": "unsure",
+            "score": -0.1,
+            "feedback": "Why should rule 42 take higher precedent than rule 53? Not that it shouldn't, but why is there a hierarchy at all here?\nWhy is Rule 4 > Rule 5? What is \"reputation\"?"
+        },
+        "dominik": {
+            "label": "leaning yes",
+            "score": 0.5,
+            "feedback": ""
+        },
+        "zeyu": {
+            "label": "leaning no",
+            "score": -0.5,
+            "feedback": ""
+        },
+        "Boyi": {
+            "label": "leaning yes",
+            "score": 0.6,
+            "feedback": ""
+        },
+        "Kincaid": {
+            "label": "unsure",
+            "score": -0.12,
+            "feedback": ""
+        }
+    },
+    "anthropic_seed1_ep1_set2": {
+        "Kylie": {
+            "label": "yes",
+            "score": 0.93,
+            "feedback": "Rule 54 too specific."
+        },
+        "Lucy": {
+            "label": "unsure",
+            "score": -0.06,
+            "feedback": "I'm not quite sure if the meta rules are reflective of the original intent. Some of the specific additions seem to narrow down the scope of the original rules too"
+        },
+        "Inyoung": {
+            "label": "unsure",
+            "score": -0.14,
+            "feedback": "For Rule 53, I am not sure if the model developer would have cared about \"cumulative environmental damage\" (then, they should make Haiku as a default instead of Opus?) "
+        },
+        "Michel": {
+            "label": "leaning yes",
+            "score": 0.43,
+            "feedback": ""
+        },
+        "Lexin": {
+            "label": "leaning yes",
+            "score": 0.3,
+            "feedback": "These rankings of priorities specified by the meta-rules are less specific and arbitrary than the previous ones, imo. But I'm unsure whether this is what Anthropic prefers. Slightly leaning yes based on my prior..."
+        },
+        "Maggie Wang": {
+            "label": "no",
+            "score": -0.75,
+            "feedback": "As much as Rules 2 and 42 are important, I don't understand how you can decide which are more important than others.\nFor Meta-Rule 2 why is it only \"use Rule 42 if applicable\" - why not Rule 2 as well (given Meta-Rule 1)?\nRule 54's change feels like a loss of intent - or an overstep, at least."
+        },
+        "dominik": {
+            "label": "yes",
+            "score": 0.75,
+            "feedback": ""
+        },
+        "zeyu": {
+            "label": "no",
+            "score": -0.7,
+            "feedback": ""
+        },
+        "Boyi": {
+            "label": "yes",
+            "score": 0.7,
+            "feedback": ""
+        },
+        "Kincaid": {
+            "label": "leaning no",
+            "score": -0.22,
+            "feedback": ""
+        }
+    },
+    "fineweb_optimal_rule_set_v1_0126yes1smrc-203626-10-ep7": {
+        "Kylie": {
+            "label": "yes",
+            "score": 0.69,
+            "feedback": "very different but same vibes"
+        },
+        "Lucy": {
+            "label": "yes",
+            "score": 0.75,
+            "feedback": "(I have seen these before so may be biased)"
+        },
+        "Inyoung": {
+            "label": "leaning yes",
+            "score": 0.61,
+            "feedback": ""
+        },
+        "Michel": {
+            "label": "leaning no",
+            "score": -0.38,
+            "feedback": "Meta-rule 6 is quite nice, but I don't think meta-rules 1-3 should be necessary??"
+        },
+        "Lexin": {
+            "label": "yes",
+            "score": 0.75,
+            "feedback": ""
+        },
+        "Maggie Wang": {
+            "label": "leaning no",
+            "score": -0.22,
+            "feedback": "What is \"the target grade level\" for Meta-Rule 4?\n\nI think some of the revised rules get too specific. For instance, for Rule 5, not all exceptional educational value will have \"engaging\" or \"polished\" language."
+        },
+        "dominik": {
+            "label": "yes",
+            "score": 0.9,
+            "feedback": ""
+        },
+        "zeyu": {
+            "label": "leaning yes",
+            "score": 0.5,
+            "feedback": ""
+        },
+        "Boyi": {
+            "label": "unsure",
+            "score": 0.13,
+            "feedback": "Existing rule refinements look good to me, but meta rules seem redundant."
+        },
+        "Kincaid": {
+            "label": "yes",
+            "score": 0.71,
+            "feedback": ""
+        }
+    },
+    "fineweb_optimal_rule_set_v1_yes1smrc-153317-0-ep10": {
+        "Kylie": {
+            "label": "unsure",
+            "score": -0.18,
+            "feedback": ""
+        },
+        "Lucy": {
+            "label": "yes",
+            "score": 0.75,
+            "feedback": "(I have seen these before so may be biased)"
+        },
+        "Inyoung": {
+            "label": "yes",
+            "score": 0.76,
+            "feedback": ""
+        },
+        "Michel": {
+            "label": "leaning yes",
+            "score": 0.54,
+            "feedback": "These meta-rules are much better"
+        },
+        "Lexin": {
+            "label": "yes",
+            "score": 0.75,
+            "feedback": ""
+        },
+        "Maggie Wang": {
+            "label": "leaning no",
+            "score": -0.3,
+            "feedback": ""
+        },
+        "dominik": {
+            "label": "yes",
+            "score": 0.8,
+            "feedback": ""
+        },
+        "zeyu": {
+            "label": "yes",
+            "score": 0.7,
+            "feedback": ""
+        },
+        "Boyi": {
+            "label": "leaning no",
+            "score": -0.5,
+            "feedback": ""
+        },
+        "Kincaid": {
+            "label": "leaning yes",
+            "score": 0.36,
+            "feedback": ""
+        }
+    },
+    "fineweb_optimal_rule_set_v1_yes1smrc-153317-0-ep2": {
+        "Kylie": {
+            "label": "leaning no",
+            "score": -0.29,
+            "feedback": "nothing about complex content or how focused it is"
+        },
+        "Lucy": {
+            "label": "leaning yes",
+            "score": 0.5,
+            "feedback": "(I have seen these before so may be biased) I think the intent is preserved, though the wordings have changed"
+        },
+        "Inyoung": {
+            "label": "yes",
+            "score": 0.78,
+            "feedback": "Some typos: grade\u00e2\u20ac\u2018school, aren\u00e2\u20ac\u2122"
+        },
+        "Michel": {
+            "label": "yes",
+            "score": 0.7,
+            "feedback": ""
+        },
+        "Lexin": {
+            "label": "yes",
+            "score": 0.75,
+            "feedback": ""
+        },
+        "Maggie Wang": {
+            "label": "yes",
+            "score": 0.66,
+            "feedback": ""
+        },
+        "dominik": {
+            "label": "yes",
+            "score": 0.8,
+            "feedback": ""
+        },
+        "zeyu": {
+            "label": "leaning yes",
+            "score": 0.5,
+            "feedback": ""
+        },
+        "Boyi": {
+            "label": "leaning yes",
+            "score": 0.6,
+            "feedback": ""
+        },
+        "Kincaid": {
+            "label": "no",
+            "score": -0.86,
+            "feedback": ""
+        }
+    },
+    "gms_ep1_optimal": {
+        "Kylie": {
+            "label": "yes",
+            "score": 1.0,
+            "feedback": ""
+        },
+        "Lucy": {
+            "label": "leaning yes",
+            "score": 0.61,
+            "feedback": ""
+        },
+        "Inyoung": {
+            "label": "yes",
+            "score": 0.78,
+            "feedback": ""
+        },
+        "Michel": {
+            "label": "yes",
+            "score": 1.0,
+            "feedback": ""
+        },
+        "Lexin": {
+            "label": "yes",
+            "score": 0.9,
+            "feedback": "I'm not an expert in law but looks like the revised one is more specific and complete, while still aligning with the original intend."
+        },
+        "Maggie Wang": {
+            "label": "yes",
+            "score": 0.8,
+            "feedback": ""
+        },
+        "dominik": {
+            "label": "yes",
+            "score": 1.0,
+            "feedback": ""
+        },
+        "zeyu": {
+            "label": "yes",
+            "score": 1.0,
+            "feedback": ""
+        },
+        "Boyi": {
+            "label": "leaning no",
+            "score": -0.28,
+            "feedback": ""
+        },
+        "Kincaid": {
+            "label": "yes",
+            "score": 0.8,
+            "feedback": ""
+        }
+    },
+    "gms_ep1_set0": {
+        "Kylie": {
+            "label": "yes",
+            "score": 1.0,
+            "feedback": ""
+        },
+        "Lucy": {
+            "label": "leaning yes",
+            "score": 0.61,
+            "feedback": ""
+        },
+        "Inyoung": {
+            "label": "leaning yes",
+            "score": 0.42,
+            "feedback": ""
+        },
+        "Michel": {
+            "label": "yes",
+            "score": 1.0,
+            "feedback": ""
+        },
+        "Lexin": {
+            "label": "yes",
+            "score": 0.9,
+            "feedback": ""
+        },
+        "Maggie Wang": {
+            "label": "yes",
+            "score": 0.75,
+            "feedback": ""
+        },
+        "dominik": {
+            "label": "yes",
+            "score": 1.0,
+            "feedback": ""
+        },
+        "zeyu": {
+            "label": "leaning yes",
+            "score": 0.5,
+            "feedback": ""
+        },
+        "Boyi": {
+            "label": "leaning no",
+            "score": -0.32,
+            "feedback": "Rule 2: \"paid in full, finally adjudicated\" seems vague after rewriting, compared with the original version, as I cannot infer whether these two conditions need to hold at the same time, or only one of them needs to hold."
+        },
+        "Kincaid": {
+            "label": "leaning yes",
+            "score": 0.26,
+            "feedback": ""
+        }
+    },
+    "hartford_ep1_optimal": {
+        "Kylie": {
+            "label": "no",
+            "score": -1.0,
+            "feedback": "This fundamentally changes the scope/meaning of the text."
+        },
+        "Lucy": {
+            "label": "leaning yes",
+            "score": 0.26,
+            "feedback": "It reduces ambiguity but maybe also changed the intent to a certain degree?"
+        },
+        "Inyoung": {
+            "label": "unsure",
+            "score": 0.0,
+            "feedback": "I am not sure whether fatigue would have been covered by original Rule 2. "
+        },
+        "Michel": {
+            "label": "unsure",
+            "score": -0.06,
+            "feedback": ""
+        },
+        "Lexin": {
+            "label": "yes",
+            "score": 0.9,
+            "feedback": ""
+        },
+        "Maggie Wang": {
+            "label": "leaning no",
+            "score": -0.5,
+            "feedback": ""
+        },
+        "dominik": {
+            "label": "yes",
+            "score": 1.0,
+            "feedback": ""
+        },
+        "zeyu": {
+            "label": "unsure",
+            "score": 0.0,
+            "feedback": ""
+        },
+        "Boyi": {
+            "label": "yes",
+            "score": 0.69,
+            "feedback": ""
+        },
+        "Kincaid": {
+            "label": "leaning no",
+            "score": -0.59,
+            "feedback": ""
+        }
+    },
+    "hartford_ep1_sample2": {
+        "Kylie": {
+            "label": "yes",
+            "score": 0.88,
+            "feedback": "just gives definitions. seems fine and within my intuition."
+        },
+        "Lucy": {
+            "label": "leaning yes",
+            "score": 0.6,
+            "feedback": ""
+        },
+        "Inyoung": {
+            "label": "yes",
+            "score": 0.75,
+            "feedback": ""
+        },
+        "Michel": {
+            "label": "unsure",
+            "score": -0.05,
+            "feedback": ""
+        },
+        "Lexin": {
+            "label": "yes",
+            "score": 0.82,
+            "feedback": ""
+        },
+        "Maggie Wang": {
+            "label": "unsure",
+            "score": -0.1,
+            "feedback": ""
+        },
+        "dominik": {
+            "label": "yes",
+            "score": 1.0,
+            "feedback": ""
+        },
+        "zeyu": {
+            "label": "leaning yes",
+            "score": 0.5,
+            "feedback": ""
+        },
+        "Boyi": {
+            "label": "leaning yes",
+            "score": 0.53,
+            "feedback": ""
+        },
+        "Kincaid": {
+            "label": "no",
+            "score": -0.66,
+            "feedback": ""
+        }
+    },
+    "openai_seed0_episode10": {
+        "Kylie": {
+            "label": "yes",
+            "score": 0.87,
+            "feedback": "yeah p decent"
+        },
+        "Lucy": {
+            "label": "leaning no",
+            "score": -0.22,
+            "feedback": "It feels a bit weird that the rule appearing earlier should always take precedence."
+        },
+        "Inyoung": {
+            "label": "leaning yes",
+            "score": 0.45,
+            "feedback": "I am not sure if the order of rules stands for its importance. I guess that setting a priority helps reduce ambiguity but not really sure if \"Don't be sycophantic\" is less important than \"Be direct.\" "
+        },
+        "Michel": {
+            "label": "leaning yes",
+            "score": 0.35,
+            "feedback": ""
+        },
+        "Lexin": {
+            "label": "unsure",
+            "score": 0.02,
+            "feedback": "I don't think meta-rule 1 is really what the designed intended. For example, rule 21 is \"Respect the letter and spirit of instructions\" while rule 35 is \"Try to prevent imminent real-world harm\". Based on meta-rule 1's logic, rule 21 should be prioritized over rule 35, which seems against OpenAI's interest. However, there's also an ambiguity in what \"early-ness\" mean: Do we mean by the rule's #ID/number or the sequential order that I see from the screen?"
+        },
+        "Maggie Wang": {
+            "label": "leaning yes",
+            "score": 0.25,
+            "feedback": ""
+        },
+        "dominik": {
+            "label": "leaning yes",
+            "score": 0.33,
+            "feedback": ""
+        },
+        "zeyu": {
+            "label": "leaning yes",
+            "score": 0.5,
+            "feedback": ""
+        },
+        "Boyi": {
+            "label": "leaning no",
+            "score": -0.63,
+            "feedback": "Meta rule does not make sense unless the original ruleset is sorted strictly by priority."
+        },
+        "Kincaid": {
+            "label": "leaning yes",
+            "score": 0.28,
+            "feedback": ""
+        }
+    },
+    "openai_seed0_episode23": {
+        "Kylie": {
+            "label": "yes",
+            "score": 0.68,
+            "feedback": ""
+        },
+        "Lucy": {
+            "label": "yes",
+            "score": 0.81,
+            "feedback": ""
+        },
+        "Inyoung": {
+            "label": "unsure",
+            "score": -0.14,
+            "feedback": "For Rule 21, the following phrase \"If the request involves impersonating another individual or entity, refuse to comply\" doesn't seem to be covered in the original Rule 21. Also, for Rule 31, I am not sure if Rule 31 means \"you may share publicly available professional contact information.\" "
+        },
+        "Michel": {
+            "label": "no",
+            "score": -0.77,
+            "feedback": ""
+        },
+        "Lexin": {
+            "label": "yes",
+            "score": 1.0,
+            "feedback": ""
+        },
+        "Maggie Wang": {
+            "label": "no",
+            "score": -1.0,
+            "feedback": ""
+        },
+        "dominik": {
+            "label": "leaning yes",
+            "score": 0.33,
+            "feedback": ""
+        },
+        "zeyu": {
+            "label": "leaning yes",
+            "score": 0.5,
+            "feedback": ""
+        },
+        "Boyi": {
+            "label": "leaning yes",
+            "score": 0.59,
+            "feedback": ""
+        },
+        "Kincaid": {
+            "label": "unsure",
+            "score": 0.12,
+            "feedback": ""
+        }
+    },
+    "openai_seed0_episode8": {
+        "Kylie": {
+            "label": "yes",
+            "score": 0.74,
+            "feedback": ""
+        },
+        "Lucy": {
+            "label": "unsure",
+            "score": -0.11,
+            "feedback": "Same comment as before: unsure about the conflict resolution prioritizing the rule that appears earlier."
+        },
+        "Inyoung": {
+            "label": "unsure",
+            "score": 0.0,
+            "feedback": "Specific rules seem fine, but again, I am not sure about the meta-rule. "
+        },
+        "Michel": {
+            "label": "unsure",
+            "score": -0.03,
+            "feedback": ""
+        },
+        "Lexin": {
+            "label": "unsure",
+            "score": 0.0,
+            "feedback": "Again, I don't think meta-rule 1 is really what the designed intended. For example, rule 21 is \"Respect the letter and spirit of instructions\" while rule 35 is \"Try to prevent imminent real-world harm\". Based on meta-rule 1's logic, rule 21 should be prioritized over rule 35, which seems against OpenAI's interest. However, there's also an ambiguity in what \"early-ness\" mean: Do we mean by the rule's #ID/number or the sequential order that I see from the screen?"
+        },
+        "Maggie Wang": {
+            "label": "leaning yes",
+            "score": 0.62,
+            "feedback": ""
+        },
+        "dominik": {
+            "label": "leaning yes",
+            "score": 0.33,
+            "feedback": ""
+        },
+        "zeyu": {
+            "label": "leaning yes",
+            "score": 0.5,
+            "feedback": ""
+        },
+        "Boyi": {
+            "label": "leaning no",
+            "score": -0.32,
+            "feedback": "Meta rule does not make sense unless the original ruleset is sorted strictly by priority."
+        },
+        "Kincaid": {
+            "label": "leaning yes",
+            "score": 0.51,
+            "feedback": ""
+        }
+    },
+    "openai_seed1_episode13": {
+        "Kylie": {
+            "label": "yes",
+            "score": 0.71,
+            "feedback": ""
+        },
+        "Lucy": {
+            "label": "yes",
+            "score": 0.87,
+            "feedback": ""
+        },
+        "Inyoung": {
+            "label": "unsure",
+            "score": 0.0,
+            "feedback": "The order of rules in the meta rule is more aligned with my common sense, but I am not sure if it's the intent of the original rule. "
+        },
+        "Michel": {
+            "label": "unsure",
+            "score": 0.11,
+            "feedback": ""
+        },
+        "Lexin": {
+            "label": "leaning yes",
+            "score": 0.6,
+            "feedback": "Not 100% whether the meta-rule 1 is originally intended but the order looks roughly in favor of OpenAI's position in how they would like their models to behave when interacting with users."
+        },
+        "Maggie Wang": {
+            "label": "unsure",
+            "score": -0.01,
+            "feedback": "In general, yes -- the definition of sycophancy doesn't always require a neutral or professional tone, right?\nNot sure if some things get too specific e.g., Rule 47 and Rule 8"
+        },
+        "dominik": {
+            "label": "leaning yes",
+            "score": 0.5,
+            "feedback": ""
+        },
+        "zeyu": {
+            "label": "yes",
+            "score": 0.7,
+            "feedback": ""
+        },
+        "Boyi": {
+            "label": "unsure",
+            "score": -0.16,
+            "feedback": "Rule 2 seems redundant."
+        },
+        "Kincaid": {
+            "label": "leaning no",
+            "score": -0.63,
+            "feedback": ""
+        }
+    },
+    "openai_seed1_episode14": {
+        "Kylie": {
+            "label": "yes",
+            "score": 0.82,
+            "feedback": ""
+        },
+        "Lucy": {
+            "label": "leaning yes",
+            "score": 0.51,
+            "feedback": ""
+        },
+        "Inyoung": {
+            "label": "unsure",
+            "score": 0.0,
+            "feedback": "typo: non\u00e2\u20ac\u2018public  \nRule 21 invites a new concept, \"interpret the request in line with safety, privacy, and truthfulness.\" "
+        },
+        "Michel": {
+            "label": "unsure",
+            "score": -0.15,
+            "feedback": ""
+        },
+        "Lexin": {
+            "label": "leaning yes",
+            "score": 0.4,
+            "feedback": "The meta-rule 1 doesn't make sense and actually is against meta-rule 2 and rule 3. If we take 2 and 3 as exceptions, fine then. But I'm not super sure whether OpenAI would necessarily like this ordering. Leaning yes but less than 50%."
+        },
+        "Maggie Wang": {
+            "label": "unsure",
+            "score": -0.15,
+            "feedback": ""
+        },
+        "dominik": {
+            "label": "leaning yes",
+            "score": 0.5,
+            "feedback": ""
+        },
+        "zeyu": {
+            "label": "yes",
+            "score": 0.7,
+            "feedback": ""
+        },
+        "Boyi": {
+            "label": "leaning yes",
+            "score": 0.41,
+            "feedback": ""
+        },
+        "Kincaid": {
+            "label": "no",
+            "score": -0.74,
+            "feedback": ""
+        }
+    },
+    "openai_seed1_episode6": {
+        "Kylie": {
+            "label": "yes",
+            "score": 0.84,
+            "feedback": ""
+        },
+        "Lucy": {
+            "label": "leaning yes",
+            "score": 0.61,
+            "feedback": ""
+        },
+        "Michel": {
+            "label": "unsure",
+            "score": -0.14,
+            "feedback": ""
+        },
+        "Lexin": {
+            "label": "leaning yes",
+            "score": 0.4,
+            "feedback": "Similar to the previous one. Leaning yes but less than 50%."
+        },
+        "Maggie Wang": {
+            "label": "unsure",
+            "score": -0.08,
+            "feedback": ""
+        },
+        "dominik": {
+            "label": "yes",
+            "score": 0.67,
+            "feedback": ""
+        },
+        "zeyu": {
+            "label": "yes",
+            "score": 0.7,
+            "feedback": ""
+        },
+        "Boyi": {
+            "label": "leaning no",
+            "score": -0.43,
+            "feedback": "Uncertainty does not need to be about a factual claim."
+        },
+        "Kincaid": {
+            "label": "no",
+            "score": -0.92,
+            "feedback": ""
+        }
+    },
+    "tesla_episode_1_ruleset_1": {
+        "Kylie": {
+            "label": "yes",
+            "score": 0.81,
+            "feedback": "just more definitions"
+        },
+        "Lucy": {
+            "label": "leaning yes",
+            "score": 0.26,
+            "feedback": ""
+        },
+        "Michel": {
+            "label": "yes",
+            "score": 0.82,
+            "feedback": ""
+        },
+        "Lexin": {
+            "label": "yes",
+            "score": 0.9,
+            "feedback": ""
+        },
+        "Maggie Wang": {
+            "label": "leaning yes",
+            "score": 0.3,
+            "feedback": ""
+        },
+        "dominik": {
+            "label": "yes",
+            "score": 0.9,
+            "feedback": ""
+        },
+        "zeyu": {
+            "label": "leaning yes",
+            "score": 0.5,
+            "feedback": ""
+        },
+        "Boyi": {
+            "label": "leaning no",
+            "score": -0.57,
+            "feedback": "Rule 1 seems redundant, and the priority seems reversed?"
+        },
+        "Kincaid": {
+            "label": "leaning yes",
+            "score": 0.53,
+            "feedback": ""
+        }
+    },
+    "tesla_episode_20_optimal": {
+        "Kylie": {
+            "label": "leaning yes",
+            "score": 0.42,
+            "feedback": ""
+        },
+        "Lucy": {
+            "label": "yes",
+            "score": 0.7,
+            "feedback": ""
+        },
+        "Michel": {
+            "label": "leaning yes",
+            "score": 0.41,
+            "feedback": ""
+        },
+        "Lexin": {
+            "label": "no",
+            "score": -1.0,
+            "feedback": "\"if two meta\u2011rules conflict, the later\u2011numbered meta\u2011rule prevails.\" --> This doesn't make sense as rule 1 should be prioritized over all other rules. If Tesla launches a fully driverless taxi serve in July, they can still satisfy rule 6 but not 1, which doesn't make sense."
+        },
+        "Maggie Wang": {
+            "label": "yes",
+            "score": 0.89,
+            "feedback": ""
+        },
+        "dominik": {
+            "label": "yes",
+            "score": 0.9,
+            "feedback": ""
+        },
+        "zeyu": {
+            "label": "leaning yes",
+            "score": 0.5,
+            "feedback": ""
+        },
+        "Boyi": {
+            "label": "leaning yes",
+            "score": 0.55,
+            "feedback": ""
+        },
+        "Kincaid": {
+            "label": "no",
+            "score": -0.89,
+            "feedback": "Model gave bizarre interpretation hierarchy - you want *all* rules to be yes, but it would allow one \u2018yes\u2019 in Rule 6 to override a lower-numbered rule, like Rule 1. It just likes number hierarchies. "
+        }
+    },
+    "tiktok_episode_1_optimal": {
+        "Kylie": {
+            "label": "leaning yes",
+            "score": 0.52,
+            "feedback": ""
+        },
+        "Lucy": {
+            "label": "unsure",
+            "score": 0.04,
+            "feedback": "I found the metarules to be a bit too specific, such that I'm not sure if those are the original intent."
+        },
+        "Michel": {
+            "label": "yes",
+            "score": 1.0,
+            "feedback": ""
+        },
+        "Lexin": {
+            "label": "yes",
+            "score": 0.91,
+            "feedback": ""
+        },
+        "Maggie Wang": {
+            "label": "yes",
+            "score": 0.79,
+            "feedback": ""
+        },
+        "dominik": {
+            "label": "yes",
+            "score": 0.9,
+            "feedback": ""
+        },
+        "zeyu": {
+            "label": "yes",
+            "score": 0.7,
+            "feedback": ""
+        },
+        "Boyi": {
+            "label": "leaning yes",
+            "score": 0.54,
+            "feedback": ""
+        },
+        "Kincaid": {
+            "label": "yes",
+            "score": 0.77,
+            "feedback": ""
+        }
+    },
+    "tiktok_episode_20_optimal": {
+        "Kylie": {
+            "label": "leaning yes",
+            "score": 0.56,
+            "feedback": "I actually don't like the revised; it's too convoluted."
+        },
+        "Lucy": {
+            "label": "leaning yes",
+            "score": 0.49,
+            "feedback": ""
+        },
+        "Michel": {
+            "label": "yes",
+            "score": 1.0,
+            "feedback": ""
+        },
+        "Lexin": {
+            "label": "yes",
+            "score": 0.9,
+            "feedback": ""
+        },
+        "Maggie Wang": {
+            "label": "leaning yes",
+            "score": 0.4,
+            "feedback": ""
+        },
+        "dominik": {
+            "label": "yes",
+            "score": 0.9,
+            "feedback": ""
+        },
+        "zeyu": {
+            "label": "unsure",
+            "score": 0.0,
+            "feedback": ""
+        },
+        "Boyi": {
+            "label": "leaning yes",
+            "score": 0.49,
+            "feedback": ""
+        },
+        "Kincaid": {
+            "label": "leaning yes",
+            "score": 0.36,
+            "feedback": ""
+        }
+    },
+    "zelensky_episode_1_optimal": {
+        "Kylie": {
+            "label": "leaning yes",
+            "score": 0.6,
+            "feedback": "same idea, this revision is too convoluted."
+        },
+        "Lucy": {
+            "label": "yes",
+            "score": 0.81,
+            "feedback": ""
+        },
+        "Michel": {
+            "label": "yes",
+            "score": 1.0,
+            "feedback": ""
+        },
+        "Lexin": {
+            "label": "yes",
+            "score": 0.9,
+            "feedback": ""
+        },
+        "Maggie Wang": {
+            "label": "yes",
+            "score": 0.81,
+            "feedback": ""
+        },
+        "dominik": {
+            "label": "yes",
+            "score": 0.75,
+            "feedback": ""
+        },
+        "zeyu": {
+            "label": "yes",
+            "score": 0.7,
+            "feedback": ""
+        },
+        "Boyi": {
+            "label": "leaning yes",
+            "score": 0.55,
+            "feedback": ""
+        },
+        "Kincaid": {
+            "label": "leaning yes",
+            "score": 0.61,
+            "feedback": ""
+        }
+    },
+    "zelensky_episode_20_optimal": {
+        "Kylie": {
+            "label": "yes",
+            "score": 0.72,
+            "feedback": ""
+        },
+        "Lucy": {
+            "label": "yes",
+            "score": 0.75,
+            "feedback": ""
+        },
+        "Michel": {
+            "label": "yes",
+            "score": 1.0,
+            "feedback": ""
+        },
+        "Lexin": {
+            "label": "leaning no",
+            "score": -0.5,
+            "feedback": "\"Military dress uniforms are not suits unless a credible source describes them as such.\" --> sounds like a random addition, which is not necessarily the original intend."
+        },
+        "Maggie Wang": {
+            "label": "yes",
+            "score": 0.86,
+            "feedback": ""
+        },
+        "dominik": {
+            "label": "yes",
+            "score": 0.9,
+            "feedback": ""
+        },
+        "zeyu": {
+            "label": "yes",
+            "score": 0.7,
+            "feedback": ""
+        },
+        "Boyi": {
+            "label": "leaning yes",
+            "score": 0.6,
+            "feedback": ""
+        },
+        "Kincaid": {
+            "label": "leaning yes",
+            "score": 0.61,
+            "feedback": ""
+        }
+    }
+}
