@@ -209,6 +209,6 @@ __marimo__/
 
 .DS_Store
 
-# intent_neurips
-intent_neurips/annotations/
-intent_neurips/scripts/
+# interface
+interface/annotations/
+interface/scripts/

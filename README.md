@@ -8,7 +8,7 @@ revision preserves the intent of the original ruleset.
 1. Clone the repo:
    ```bash
    git clone https://github.com/nimra-nadeem/cai_annotations.git
-   cd cai_annotations/intent_neurips
+   cd cai_annotations/interface
    ```
 2. Install the one dependency (Flask):
    ```bash
@@ -19,7 +19,7 @@ revision preserves the intent of the original ruleset.
 
 ## Running the app
 
-From the `intent_neurips/` directory:
+From the `interface/` directory:
 
 ```bash
 python app.py
