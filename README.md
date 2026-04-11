@@ -1,4 +1,4 @@
-# Annotation Instructions for POLAR Lab Meeting (04/09)
+# Annotation Instructions for POLARIS Lab Meeting (04/09)
 
 Thanks for helping annotate! This is a small Flask app that shows you pairs of rulesets (an original and a revised version) and asks you to judge whether the
 revision preserves the intent of the original ruleset.
