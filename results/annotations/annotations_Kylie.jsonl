@@ -1,0 +1,22 @@
+{"annotator": "Kylie", "original_name": "anthropic", "revised_name": "seed1_ep1_optimal", "score": 0.51, "label": "leaning yes", "feedback": "Some of the prioritizations are overly specific.", "timestamp": 1775768919.497371}
+{"annotator": "Kylie", "original_name": "anthropic", "revised_name": "seed1_ep1_set1", "score": -1, "label": "no", "feedback": "", "timestamp": 1775769013.509758}
+{"annotator": "Kylie", "original_name": "anthropic", "revised_name": "seed1_ep1_set2", "score": 0.93, "label": "yes", "feedback": "Rule 54 too specific.", "timestamp": 1775769052.311966}
+{"annotator": "Kylie", "original_name": "fineweb", "revised_name": "optimal_rule_set_v1_0126yes1smrc-203626-10-ep7", "score": 0.69, "label": "yes", "feedback": "very different but same vibes", "timestamp": 1775769212.611682}
+{"annotator": "Kylie", "original_name": "fineweb", "revised_name": "optimal_rule_set_v1_yes1smrc-153317-0-ep10", "score": -0.18, "label": "unsure", "feedback": "", "timestamp": 1775769251.891958}
+{"annotator": "Kylie", "original_name": "fineweb", "revised_name": "optimal_rule_set_v1_yes1smrc-153317-0-ep2", "score": -0.29, "label": "leaning no", "feedback": "nothing about complex content or how focused it is", "timestamp": 1775769319.226711}
+{"annotator": "Kylie", "original_name": "gms", "revised_name": "ep1_optimal", "score": 1, "label": "yes", "feedback": "", "timestamp": 1775769400.8787022}
+{"annotator": "Kylie", "original_name": "gms", "revised_name": "ep1_set0", "score": 1, "label": "yes", "feedback": "", "timestamp": 1775769419.627248}
+{"annotator": "Kylie", "original_name": "hartford", "revised_name": "ep1_optimal", "score": -1, "label": "no", "feedback": "This fundamentally changes the scope/meaning of the text.", "timestamp": 1775769507.409927}
+{"annotator": "Kylie", "original_name": "hartford", "revised_name": "ep1_sample2", "score": 0.88, "label": "yes", "feedback": "just gives definitions. seems fine and within my intuition.", "timestamp": 1775769569.441736}
+{"annotator": "Kylie", "original_name": "openai", "revised_name": "seed0_episode10", "score": 0.87, "label": "yes", "feedback": "yeah p decent", "timestamp": 1775769605.45689}
+{"annotator": "Kylie", "original_name": "openai", "revised_name": "seed0_episode23", "score": 0.68, "label": "yes", "feedback": "", "timestamp": 1775769670.909526}
+{"annotator": "Kylie", "original_name": "openai", "revised_name": "seed0_episode8", "score": 0.74, "label": "yes", "feedback": "", "timestamp": 1775769715.625654}
+{"annotator": "Kylie", "original_name": "openai", "revised_name": "seed1_episode13", "score": 0.71, "label": "yes", "feedback": "", "timestamp": 1775769789.841669}
+{"annotator": "Kylie", "original_name": "openai", "revised_name": "seed1_episode14", "score": 0.82, "label": "yes", "feedback": "", "timestamp": 1775769811.675516}
+{"annotator": "Kylie", "original_name": "openai", "revised_name": "seed1_episode6", "score": 0.84, "label": "yes", "feedback": "", "timestamp": 1775769827.3092139}
+{"annotator": "Kylie", "original_name": "tesla", "revised_name": "episode_1_ruleset_1", "score": 0.81, "label": "yes", "feedback": "just more definitions", "timestamp": 1775769913.721715}
+{"annotator": "Kylie", "original_name": "tesla", "revised_name": "episode_20_optimal", "score": 0.42, "label": "leaning yes", "feedback": "", "timestamp": 1775769956.623214}
+{"annotator": "Kylie", "original_name": "tiktok", "revised_name": "episode_1_optimal", "score": 0.52, "label": "leaning yes", "feedback": "", "timestamp": 1775770019.658893}
+{"annotator": "Kylie", "original_name": "tiktok", "revised_name": "episode_20_optimal", "score": 0.56, "label": "leaning yes", "feedback": "I actually don't like the revised; it's too convoluted.", "timestamp": 1775770056.1705952}
+{"annotator": "Kylie", "original_name": "zelensky", "revised_name": "episode_1_optimal", "score": 0.6, "label": "leaning yes", "feedback": "same idea, this revision is too convoluted.", "timestamp": 1775770095.8398762}
+{"annotator": "Kylie", "original_name": "zelensky", "revised_name": "episode_20_optimal", "score": 0.72, "label": "yes", "feedback": "", "timestamp": 1775770118.257333}

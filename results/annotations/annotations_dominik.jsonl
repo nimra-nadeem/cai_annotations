@@ -1,0 +1,26 @@
+{"annotator": "dominik", "original_name": "anthropic", "revised_name": "seed1_ep1_optimal", "score": 0.8, "label": "yes", "feedback": "", "timestamp": 1775767987.5775151}
+{"annotator": "dominik", "original_name": "anthropic", "revised_name": "seed1_ep1_optimal", "score": 0.8, "label": "yes", "feedback": "", "timestamp": 1775768104.490826}
+{"annotator": "dominik", "original_name": "anthropic", "revised_name": "seed1_ep1_optimal", "score": 0.5, "label": "leaning yes", "feedback": "", "timestamp": 1775768219.516088}
+{"annotator": "dominik", "original_name": "anthropic", "revised_name": "seed1_ep1_set1", "score": 0.5, "label": "leaning yes", "feedback": "", "timestamp": 1775768224.482275}
+{"annotator": "dominik", "original_name": "anthropic", "revised_name": "seed1_ep1_set2", "score": 0.75, "label": "yes", "feedback": "", "timestamp": 1775768363.704036}
+{"annotator": "dominik", "original_name": "fineweb", "revised_name": "optimal_rule_set_v1_0126yes1smrc-203626-10-ep7", "score": 0.9, "label": "yes", "feedback": "", "timestamp": 1775768743.0824199}
+{"annotator": "dominik", "original_name": "fineweb", "revised_name": "optimal_rule_set_v1_yes1smrc-153317-0-ep10", "score": 0.8, "label": "yes", "feedback": "", "timestamp": 1775768839.101918}
+{"annotator": "dominik", "original_name": "fineweb", "revised_name": "optimal_rule_set_v1_yes1smrc-153317-0-ep2", "score": 0.8, "label": "yes", "feedback": "", "timestamp": 1775768947.534036}
+{"annotator": "dominik", "original_name": "gms", "revised_name": "ep1_optimal", "score": 1, "label": "yes", "feedback": "", "timestamp": 1775769122.58076}
+{"annotator": "dominik", "original_name": "gms", "revised_name": "ep1_set0", "score": 1, "label": "yes", "feedback": "", "timestamp": 1775769176.489849}
+{"annotator": "dominik", "original_name": "hartford", "revised_name": "ep1_optimal", "score": 1, "label": "yes", "feedback": "", "timestamp": 1775769377.930933}
+{"annotator": "dominik", "original_name": "hartford", "revised_name": "ep1_optimal", "score": 1, "label": "yes", "feedback": "", "timestamp": 1775769403.386807}
+{"annotator": "dominik", "original_name": "hartford", "revised_name": "ep1_sample2", "score": 1, "label": "yes", "feedback": "", "timestamp": 1775769467.692342}
+{"annotator": "dominik", "original_name": "openai", "revised_name": "seed0_episode10", "score": 0.33, "label": "leaning yes", "feedback": "", "timestamp": 1775769600.3017468}
+{"annotator": "dominik", "original_name": "openai", "revised_name": "seed0_episode23", "score": 0.33, "label": "leaning yes", "feedback": "", "timestamp": 1775769666.694307}
+{"annotator": "dominik", "original_name": "openai", "revised_name": "seed0_episode8", "score": 0.33, "label": "leaning yes", "feedback": "", "timestamp": 1775769687.184321}
+{"annotator": "dominik", "original_name": "openai", "revised_name": "seed1_episode13", "score": 0.5, "label": "leaning yes", "feedback": "", "timestamp": 1775769740.104747}
+{"annotator": "dominik", "original_name": "openai", "revised_name": "seed1_episode14", "score": 0.5, "label": "leaning yes", "feedback": "", "timestamp": 1775769880.5840771}
+{"annotator": "dominik", "original_name": "openai", "revised_name": "seed1_episode6", "score": 0.67, "label": "yes", "feedback": "", "timestamp": 1775769929.8630688}
+{"annotator": "dominik", "original_name": "tesla", "revised_name": "episode_1_ruleset_1", "score": 0.9, "label": "yes", "feedback": "", "timestamp": 1775770138.623289}
+{"annotator": "dominik", "original_name": "tesla", "revised_name": "episode_20_optimal", "score": 0.9, "label": "yes", "feedback": "", "timestamp": 1775770160.846517}
+{"annotator": "dominik", "original_name": "tesla", "revised_name": "episode_20_optimal", "score": 0.9, "label": "yes", "feedback": "", "timestamp": 1775770207.348233}
+{"annotator": "dominik", "original_name": "tiktok", "revised_name": "episode_1_optimal", "score": 0.9, "label": "yes", "feedback": "", "timestamp": 1775770307.7696729}
+{"annotator": "dominik", "original_name": "tiktok", "revised_name": "episode_20_optimal", "score": 0.9, "label": "yes", "feedback": "", "timestamp": 1775770322.467082}
+{"annotator": "dominik", "original_name": "zelensky", "revised_name": "episode_1_optimal", "score": 0.75, "label": "yes", "feedback": "", "timestamp": 1775770435.319548}
+{"annotator": "dominik", "original_name": "zelensky", "revised_name": "episode_20_optimal", "score": 0.9, "label": "yes", "feedback": "", "timestamp": 1775770454.927862}

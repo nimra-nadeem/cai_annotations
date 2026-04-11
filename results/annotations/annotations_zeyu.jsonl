@@ -1,0 +1,24 @@
+{"annotator": "zeyu", "original_name": "anthropic", "revised_name": "seed1_ep1_optimal", "score": -0.49, "label": "leaning no", "feedback": "", "timestamp": 1775767804.2620769}
+{"annotator": "zeyu", "original_name": "anthropic", "revised_name": "seed1_ep1_set1", "score": -0.5, "label": "leaning no", "feedback": "", "timestamp": 1775767878.780423}
+{"annotator": "zeyu", "original_name": "anthropic", "revised_name": "seed1_ep1_set2", "score": -0.7, "label": "no", "feedback": "", "timestamp": 1775767912.7076008}
+{"annotator": "zeyu", "original_name": "fineweb", "revised_name": "optimal_rule_set_v1_0126yes1smrc-203626-10-ep7", "score": 0.5, "label": "leaning yes", "feedback": "", "timestamp": 1775768084.653006}
+{"annotator": "zeyu", "original_name": "fineweb", "revised_name": "optimal_rule_set_v1_yes1smrc-153317-0-ep10", "score": 0.7, "label": "yes", "feedback": "", "timestamp": 1775768103.3153942}
+{"annotator": "zeyu", "original_name": "fineweb", "revised_name": "optimal_rule_set_v1_yes1smrc-153317-0-ep2", "score": 0.5, "label": "leaning yes", "feedback": "", "timestamp": 1775768174.924473}
+{"annotator": "zeyu", "original_name": "gms", "revised_name": "ep1_optimal", "score": 1, "label": "yes", "feedback": "", "timestamp": 1775768357.238843}
+{"annotator": "zeyu", "original_name": "gms", "revised_name": "ep1_set0", "score": 0.5, "label": "leaning yes", "feedback": "", "timestamp": 1775768380.102359}
+{"annotator": "zeyu", "original_name": "hartford", "revised_name": "ep1_optimal", "score": 0, "label": "unsure", "feedback": "", "timestamp": 1775768533.7859619}
+{"annotator": "zeyu", "original_name": "hartford", "revised_name": "ep1_sample2", "score": 0.5, "label": "leaning yes", "feedback": "", "timestamp": 1775768556.531412}
+{"annotator": "zeyu", "original_name": "openai", "revised_name": "seed0_episode10", "score": 0.5, "label": "leaning yes", "feedback": "", "timestamp": 1775768636.238378}
+{"annotator": "zeyu", "original_name": "openai", "revised_name": "seed0_episode23", "score": 0.5, "label": "leaning yes", "feedback": "", "timestamp": 1775768661.7525902}
+{"annotator": "zeyu", "original_name": "openai", "revised_name": "seed0_episode8", "score": 0.5, "label": "leaning yes", "feedback": "", "timestamp": 1775768683.508673}
+{"annotator": "zeyu", "original_name": "openai", "revised_name": "seed1_episode13", "score": 0.7, "label": "yes", "feedback": "", "timestamp": 1775768711.177045}
+{"annotator": "zeyu", "original_name": "openai", "revised_name": "seed1_episode14", "score": 0.7, "label": "yes", "feedback": "", "timestamp": 1775768736.4474938}
+{"annotator": "zeyu", "original_name": "openai", "revised_name": "seed1_episode6", "score": 0.7, "label": "yes", "feedback": "", "timestamp": 1775768751.625859}
+{"annotator": "zeyu", "original_name": "tesla", "revised_name": "episode_1_ruleset_1", "score": 0.5, "label": "leaning yes", "feedback": "", "timestamp": 1775768961.0861561}
+{"annotator": "zeyu", "original_name": "tesla", "revised_name": "episode_20_optimal", "score": 0.5, "label": "leaning yes", "feedback": "", "timestamp": 1775769005.2223182}
+{"annotator": "zeyu", "original_name": "tiktok", "revised_name": "episode_1_optimal", "score": 0.7, "label": "yes", "feedback": "", "timestamp": 1775769115.4022431}
+{"annotator": "zeyu", "original_name": "tiktok", "revised_name": "episode_20_optimal", "score": 0, "label": "unsure", "feedback": "", "timestamp": 1775769209.544197}
+{"annotator": "zeyu", "original_name": "tiktok", "revised_name": "episode_20_optimal", "score": 0, "label": "unsure", "feedback": "", "timestamp": 1775769229.162443}
+{"annotator": "zeyu", "original_name": "zelensky", "revised_name": "episode_1_optimal", "score": 0.3, "label": "leaning yes", "feedback": "", "timestamp": 1775769306.540959}
+{"annotator": "zeyu", "original_name": "zelensky", "revised_name": "episode_1_optimal", "score": 0.7, "label": "yes", "feedback": "", "timestamp": 1775769321.072723}
+{"annotator": "zeyu", "original_name": "zelensky", "revised_name": "episode_20_optimal", "score": 0.7, "label": "yes", "feedback": "", "timestamp": 1775769333.889936}

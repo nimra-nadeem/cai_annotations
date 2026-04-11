@@ -1,0 +1,23 @@
+{"annotator": "Kincaid", "original_name": "anthropic", "revised_name": "seed1_ep1_optimal", "score": -0.53, "label": "leaning no", "feedback": "", "timestamp": 1775768017.7046328}
+{"annotator": "Kincaid", "original_name": "anthropic", "revised_name": "seed1_ep1_set1", "score": -0.12, "label": "unsure", "feedback": "", "timestamp": 1775768122.9755278}
+{"annotator": "Kincaid", "original_name": "anthropic", "revised_name": "seed1_ep1_set2", "score": -0.22, "label": "leaning no", "feedback": "", "timestamp": 1775768242.5882022}
+{"annotator": "Kincaid", "original_name": "fineweb", "revised_name": "optimal_rule_set_v1_0126yes1smrc-203626-10-ep7", "score": 0.71, "label": "yes", "feedback": "", "timestamp": 1775768433.5534666}
+{"annotator": "Kincaid", "original_name": "fineweb", "revised_name": "optimal_rule_set_v1_yes1smrc-153317-0-ep10", "score": 0.36, "label": "leaning yes", "feedback": "", "timestamp": 1775768484.9583375}
+{"annotator": "Kincaid", "original_name": "fineweb", "revised_name": "optimal_rule_set_v1_yes1smrc-153317-0-ep2", "score": -0.86, "label": "no", "feedback": "", "timestamp": 1775768553.0562205}
+{"annotator": "Kincaid", "original_name": "gms", "revised_name": "ep1_optimal", "score": 0.8, "label": "yes", "feedback": "", "timestamp": 1775768711.7793357}
+{"annotator": "Kincaid", "original_name": "gms", "revised_name": "ep1_set0", "score": 0.26, "label": "leaning yes", "feedback": "", "timestamp": 1775768738.4033275}
+{"annotator": "Kincaid", "original_name": "hartford", "revised_name": "ep1_optimal", "score": -0.59, "label": "leaning no", "feedback": "", "timestamp": 1775768848.562742}
+{"annotator": "Kincaid", "original_name": "hartford", "revised_name": "ep1_sample2", "score": -0.66, "label": "no", "feedback": "", "timestamp": 1775768867.01554}
+{"annotator": "Kincaid", "original_name": "openai", "revised_name": "seed0_episode10", "score": 0.28, "label": "leaning yes", "feedback": "", "timestamp": 1775768973.2088046}
+{"annotator": "Kincaid", "original_name": "openai", "revised_name": "seed0_episode23", "score": 0.12, "label": "unsure", "feedback": "", "timestamp": 1775769011.0911689}
+{"annotator": "Kincaid", "original_name": "openai", "revised_name": "seed0_episode8", "score": 0.51, "label": "leaning yes", "feedback": "", "timestamp": 1775769038.9471729}
+{"annotator": "Kincaid", "original_name": "openai", "revised_name": "seed1_episode13", "score": -0.63, "label": "leaning no", "feedback": "", "timestamp": 1775769083.4870842}
+{"annotator": "Kincaid", "original_name": "openai", "revised_name": "seed1_episode14", "score": -0.74, "label": "no", "feedback": "", "timestamp": 1775769096.2703207}
+{"annotator": "Kincaid", "original_name": "openai", "revised_name": "seed1_episode6", "score": -0.92, "label": "no", "feedback": "", "timestamp": 1775769123.834048}
+{"annotator": "Kincaid", "original_name": "tesla", "revised_name": "episode_1_ruleset_1", "score": 0.53, "label": "leaning yes", "feedback": "", "timestamp": 1775769297.6078246}
+{"annotator": "Kincaid", "original_name": "tesla", "revised_name": "episode_20_optimal", "score": 0.69, "label": "yes", "feedback": "", "timestamp": 1775769349.1801481}
+{"annotator": "Kincaid", "original_name": "tesla", "revised_name": "episode_20_optimal", "score": -0.89, "label": "no", "feedback": "Model gave bizarre interpretation hierarchy - you want *all* rules to be yes, but it would allow one \u2018yes\u2019 in Rule 6 to override a lower-numbered rule, like Rule 1. It just likes number hierarchies. ", "timestamp": 1775769464.8835018}
+{"annotator": "Kincaid", "original_name": "tiktok", "revised_name": "episode_1_optimal", "score": 0.77, "label": "yes", "feedback": "", "timestamp": 1775769542.9952695}
+{"annotator": "Kincaid", "original_name": "tiktok", "revised_name": "episode_20_optimal", "score": 0.36, "label": "leaning yes", "feedback": "", "timestamp": 1775769629.082958}
+{"annotator": "Kincaid", "original_name": "zelensky", "revised_name": "episode_1_optimal", "score": 0.61, "label": "leaning yes", "feedback": "", "timestamp": 1775769697.9490666}
+{"annotator": "Kincaid", "original_name": "zelensky", "revised_name": "episode_20_optimal", "score": 0.61, "label": "leaning yes", "feedback": "", "timestamp": 1775769715.571034}

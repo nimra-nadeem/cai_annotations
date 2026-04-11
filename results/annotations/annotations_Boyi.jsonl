@@ -1,0 +1,24 @@
+{"annotator": "Boyi", "original_name": "anthropic", "revised_name": "seed1_ep1_optimal", "score": 0.9, "label": "yes", "feedback": "", "timestamp": 1775767959.350992}
+{"annotator": "Boyi", "original_name": "anthropic", "revised_name": "seed1_ep1_set1", "score": 0.81, "label": "yes", "feedback": "", "timestamp": 1775768056.826714}
+{"annotator": "Boyi", "original_name": "anthropic", "revised_name": "seed1_ep1_set1", "score": 0.6, "label": "leaning yes", "feedback": "", "timestamp": 1775768203.046062}
+{"annotator": "Boyi", "original_name": "anthropic", "revised_name": "seed1_ep1_set2", "score": 0.7, "label": "yes", "feedback": "", "timestamp": 1775768214.763072}
+{"annotator": "Boyi", "original_name": "fineweb", "revised_name": "optimal_rule_set_v1_0126yes1smrc-203626-10-ep7", "score": 0.13, "label": "unsure", "feedback": "Existing rule refinements look good to me, but meta rules seem redundant.", "timestamp": 1775768653.694436}
+{"annotator": "Boyi", "original_name": "fineweb", "revised_name": "optimal_rule_set_v1_yes1smrc-153317-0-ep10", "score": -0.5, "label": "leaning no", "feedback": "", "timestamp": 1775768707.0933928}
+{"annotator": "Boyi", "original_name": "fineweb", "revised_name": "optimal_rule_set_v1_yes1smrc-153317-0-ep2", "score": 0.6, "label": "leaning yes", "feedback": "", "timestamp": 1775768979.833313}
+{"annotator": "Boyi", "original_name": "gms", "revised_name": "ep1_optimal", "score": -0.28, "label": "leaning no", "feedback": "", "timestamp": 1775769377.032796}
+{"annotator": "Boyi", "original_name": "gms", "revised_name": "ep1_set0", "score": -0.32, "label": "leaning no", "feedback": "Rule 2: \"paid in full, finally adjudicated\" seems vague after rewriting, compared with the original version, as I cannot infer whether these two conditions need to hold at the same time, or only one of them needs to hold.", "timestamp": 1775769597.091128}
+{"annotator": "Boyi", "original_name": "hartford", "revised_name": "ep1_optimal", "score": 0.69, "label": "yes", "feedback": "", "timestamp": 1775769687.619998}
+{"annotator": "Boyi", "original_name": "hartford", "revised_name": "ep1_sample2", "score": 0.53, "label": "leaning yes", "feedback": "", "timestamp": 1775769743.387042}
+{"annotator": "Boyi", "original_name": "openai", "revised_name": "seed0_episode10", "score": -0.63, "label": "leaning no", "feedback": "Meta rule does not make sense", "timestamp": 1775769779.409385}
+{"annotator": "Boyi", "original_name": "openai", "revised_name": "seed0_episode10", "score": -0.63, "label": "leaning no", "feedback": "Meta rule does not make sense unless the original ruleset is sorted strictly by priority.", "timestamp": 1775769853.985049}
+{"annotator": "Boyi", "original_name": "openai", "revised_name": "seed0_episode23", "score": 0.59, "label": "leaning yes", "feedback": "", "timestamp": 1775769860.2539158}
+{"annotator": "Boyi", "original_name": "openai", "revised_name": "seed0_episode8", "score": -0.32, "label": "leaning no", "feedback": "Meta rule does not make sense unless the original ruleset is sorted strictly by priority.", "timestamp": 1775769879.900701}
+{"annotator": "Boyi", "original_name": "openai", "revised_name": "seed1_episode13", "score": -0.16, "label": "unsure", "feedback": "Rule 2 seems redundant.", "timestamp": 1775769917.825164}
+{"annotator": "Boyi", "original_name": "openai", "revised_name": "seed1_episode14", "score": 0.41, "label": "leaning yes", "feedback": "", "timestamp": 1775769961.960112}
+{"annotator": "Boyi", "original_name": "openai", "revised_name": "seed1_episode6", "score": -0.43, "label": "leaning no", "feedback": "Uncertainty does not need to be about a factual claim.", "timestamp": 1775769995.776515}
+{"annotator": "Boyi", "original_name": "tesla", "revised_name": "episode_1_ruleset_1", "score": -0.57, "label": "leaning no", "feedback": "Rule 1 seems redundant, and the priority seems reversed?", "timestamp": 1775770131.6434839}
+{"annotator": "Boyi", "original_name": "tesla", "revised_name": "episode_20_optimal", "score": 0.55, "label": "leaning yes", "feedback": "", "timestamp": 1775770197.863414}
+{"annotator": "Boyi", "original_name": "tiktok", "revised_name": "episode_1_optimal", "score": 0.54, "label": "leaning yes", "feedback": "", "timestamp": 1775770266.057954}
+{"annotator": "Boyi", "original_name": "tiktok", "revised_name": "episode_20_optimal", "score": 0.49, "label": "leaning yes", "feedback": "", "timestamp": 1775770300.988988}
+{"annotator": "Boyi", "original_name": "zelensky", "revised_name": "episode_1_optimal", "score": 0.55, "label": "leaning yes", "feedback": "", "timestamp": 1775770353.727485}
+{"annotator": "Boyi", "original_name": "zelensky", "revised_name": "episode_20_optimal", "score": 0.6, "label": "leaning yes", "feedback": "", "timestamp": 1775770376.128936}

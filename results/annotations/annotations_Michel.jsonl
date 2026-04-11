@@ -1,0 +1,22 @@
+{"annotator": "Michel", "original_name": "anthropic", "revised_name": "seed1_ep1_optimal", "score": 0.84, "label": "yes", "feedback": "", "timestamp": 1775768326.34086}
+{"annotator": "Michel", "original_name": "anthropic", "revised_name": "seed1_ep1_set1", "score": 0.15, "label": "unsure", "feedback": "This hierarchy is very elaborate, I think most of the meta-rules make sense except for meta-rule 4 (I wouldn't order it the same way)", "timestamp": 1775768556.9664829}
+{"annotator": "Michel", "original_name": "anthropic", "revised_name": "seed1_ep1_set2", "score": 0.43, "label": "leaning yes", "feedback": "", "timestamp": 1775768587.391938}
+{"annotator": "Michel", "original_name": "fineweb", "revised_name": "optimal_rule_set_v1_0126yes1smrc-203626-10-ep7", "score": -0.38, "label": "leaning no", "feedback": "Meta-rule 6 is quite nice, but I don't think meta-rules 1-3 should be necessary??", "timestamp": 1775768898.420295}
+{"annotator": "Michel", "original_name": "fineweb", "revised_name": "optimal_rule_set_v1_yes1smrc-153317-0-ep10", "score": 0.54, "label": "leaning yes", "feedback": "These meta-rules are much better", "timestamp": 1775768980.8076868}
+{"annotator": "Michel", "original_name": "fineweb", "revised_name": "optimal_rule_set_v1_yes1smrc-153317-0-ep2", "score": 0.7, "label": "yes", "feedback": "", "timestamp": 1775769056.1239328}
+{"annotator": "Michel", "original_name": "gms", "revised_name": "ep1_optimal", "score": 1, "label": "yes", "feedback": "", "timestamp": 1775769193.957488}
+{"annotator": "Michel", "original_name": "gms", "revised_name": "ep1_set0", "score": 1, "label": "yes", "feedback": "", "timestamp": 1775769215.835041}
+{"annotator": "Michel", "original_name": "hartford", "revised_name": "ep1_optimal", "score": -0.06, "label": "unsure", "feedback": "", "timestamp": 1775769356.261726}
+{"annotator": "Michel", "original_name": "hartford", "revised_name": "ep1_sample2", "score": -0.05, "label": "unsure", "feedback": "", "timestamp": 1775769465.244388}
+{"annotator": "Michel", "original_name": "openai", "revised_name": "seed0_episode10", "score": 0.35, "label": "leaning yes", "feedback": "", "timestamp": 1775769511.4730098}
+{"annotator": "Michel", "original_name": "openai", "revised_name": "seed0_episode23", "score": -0.77, "label": "no", "feedback": "", "timestamp": 1775769587.441087}
+{"annotator": "Michel", "original_name": "openai", "revised_name": "seed0_episode8", "score": -0.03, "label": "unsure", "feedback": "", "timestamp": 1775942047.527285}
+{"annotator": "Michel", "original_name": "openai", "revised_name": "seed1_episode13", "score": 0.11, "label": "unsure", "feedback": "", "timestamp": 1775942186.0040162}
+{"annotator": "Michel", "original_name": "openai", "revised_name": "seed1_episode14", "score": -0.15, "label": "unsure", "feedback": "", "timestamp": 1775942206.882805}
+{"annotator": "Michel", "original_name": "openai", "revised_name": "seed1_episode6", "score": -0.14, "label": "unsure", "feedback": "", "timestamp": 1775942242.725091}
+{"annotator": "Michel", "original_name": "tesla", "revised_name": "episode_1_ruleset_1", "score": 0.82, "label": "yes", "feedback": "", "timestamp": 1775942354.9438038}
+{"annotator": "Michel", "original_name": "tesla", "revised_name": "episode_20_optimal", "score": 0.41, "label": "leaning yes", "feedback": "", "timestamp": 1775942422.2152379}
+{"annotator": "Michel", "original_name": "tiktok", "revised_name": "episode_1_optimal", "score": 1, "label": "yes", "feedback": "", "timestamp": 1775942536.1392431}
+{"annotator": "Michel", "original_name": "tiktok", "revised_name": "episode_20_optimal", "score": 1, "label": "yes", "feedback": "", "timestamp": 1775942584.474485}
+{"annotator": "Michel", "original_name": "zelensky", "revised_name": "episode_1_optimal", "score": 1, "label": "yes", "feedback": "", "timestamp": 1775943074.2845492}
+{"annotator": "Michel", "original_name": "zelensky", "revised_name": "episode_20_optimal", "score": 1, "label": "yes", "feedback": "", "timestamp": 1775943241.500333}
